@@ -1,0 +1,69 @@
+Skript gestartet auf Di 05 Mai 2015 17:10:14 CEST
+]0;schopper@BFJ8G32: ~schopper@BFJ8G32:~$ screen
+                                                                                 
+Screen version 4.01.00devel (GNU) 2-May-06
+
+Copyright (c) 2010 Juergen Weigert, Sadrul Habib Chowdhury
+Copyright (c) 2008, 2009 Juergen Weigert, Michael Schroeder, Micah Cowan, Sadrul Habib Chowdhury
+Copyright (c) 1993-2002, 2003, 2005, 2006, 2007 Juergen Weigert, Michael Schroeder
+Copyright (c) 1987 Oliver Laumann
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+License for more details.
+
+You should have received a copy of the GNU General Public License along with this program (see the file COPYING); if not, see http://www.gnu.org/licenses/, or contact Free Software Foundation, Inc., 51 Franklin
+Street, Fifth Floor, Boston, MA  02111-1301  USA.
+
+Send bugreports, fixes, enhancements, t-shirts, money, beer & pizza to screen-devel@gnu.org
+
+
+Capabilities:
++copy +remote-detach +power-detach +multi-attach +multi-user +font +color-256 +utf8 +rxvt +builtin-telnet        [Press Space or Return to end.]
+[H[2Jschopper@BFJ8G32:~$ ls
+[4m[37mApplications[24m[39m        assignment9.timing  [4m[37mDokumente[24m[39m    [1m[36meigene_dateien[0m                   [4m[37mMusik[24m[39m                   screenlog.0               th_signature.txt  [4m[37mVirtualBox VMs[24m[39m  [4m[37mworkspace_stuff[24m[39m
+assignment8         [4m[37mBilder[24m[39m              [4m[37mdokus_infos[24m[39m  [4m[37mexchange[24m[39m                         [4m[37mÖffentlich[24m[39m              th_signature-ext-en.html  [4m[37mtmp[24m[39m               [4m[37mVorlagen[24m[39m        [4m[37mwww[24m[39m
+assignment8.timing  [4m[37mbin[24m[39m                 [4m[37mDownloads[24m[39m    [1m[31mFonts.zip[0m                        passwords-bisnode2.xml  th_signature-ext.html     [4m[37mtrials[24m[39m            [1m[36mwin_shares[0m
+assignment9         [1m[36mdata[0m                dump.sql     [1m[31minsights-dev-db-20150204.sql.gz[0m  [4m[37mSchreibtisch[24m[39m            th_signature.html         [4m[37mVideos[24m[39m            [4m[37mworkspace[24m[39m
+schopper@BFJ8G32:~$ [H[2Jschopper@BFJ8G32:~$ pwd
+/home/schopper
+schopper@BFJ8G32:~$ [H[2Jschopper@BFJ8G32:~$ ls
+[4m[37mApplications[8C[24m[39massignment9.timing  [4m[37mDokumente[4C[24m[1m[36meigene_dateien[19C[0m[4m[37mMusik[19C[24m[39mscreenlog.0[15Cth_signature.txt  [4m[37mVirtualBox VMs[2Cworkspace_stuff
+[24m[39massignment8[9C[4m[37mBilder[14Cdokus_infos[2Cexchange[25CÖffentlich[14C[24m[39mth_signature-ext-en.html  [4m[37mtmp[15CVorlagen[8Cwww
+[24m[39massignment8.timing  [4m[37mbin[17CDownloads[4C[24m[1m[31mFonts.zip[24C[0mpasswords-bisnode2.xml  th_signature-ext.html[5C[4m[37mtrials[12C[24m[1m[36mwin_shares
+[0massignment9[9C[1m[36mdata[16C[0mdump.sql[5C[1m[31minsights-dev-db-20150204.sql.gz[2C[0m[4m[37mSchreibtisch[12C[24m[39mth_signature.html[9C[4m[37mVideos[12Cworkspace
+[24m[39mschopper@BFJ8G32:~$ [H[2Jschopper@BFJ8G32:~$ pwd
+/home/schopper
+schopper@BFJ8G32:~$ [H[2Jschopper@BFJ8G32:~$ ls
+[4m[37mApplications[8C[24m[39massignment9.timing  [4m[37mDokumente[4C[24m[1m[36meigene_dateien[19C[0m[4m[37mMusik[19C[24m[39mscreenlog.0[15Cth_signature.txt  [4m[37mVirtualBox VMs[2Cworkspace_stuff
+[24m[39massignment8[9C[4m[37mBilder[14Cdokus_infos[2Cexchange[25CÖffentlich[14C[24m[39mth_signature-ext-en.html  [4m[37mtmp[15CVorlagen[8Cwww
+[24m[39massignment8.timing  [4m[37mbin[17CDownloads[4C[24m[1m[31mFonts.zip[24C[0mpasswords-bisnode2.xml  th_signature-ext.html[5C[4m[37mtrials[12C[24m[1m[36mwin_shares
+[0massignment9[9C[1m[36mdata[16C[0mdump.sql[5C[1m[31minsights-dev-db-20150204.sql.gz[2C[0m[4m[37mSchreibtisch[12C[24m[39mth_signature.html[9C[4m[37mVideos[12Cworkspace
+[24m[39mschopper@BFJ8G32:~$ [H[2Jschopper@BFJ8G32:~$ pwd
+/home/schopper
+schopper@BFJ8G32:~$ [?1l>[58;1H
+[?1049l[detached from 10382.pts-19.BFJ8G32]
+]0;schopper@BFJ8G32: ~schopper@BFJ8G32:~$ screen -ls
+There is a screen on:
+	10382.pts-19.BFJ8G32	(05.05.2015 17:10:18)	(Detached)
+1 Socket in /var/run/screen/S-schopper.
+
+]0;schopper@BFJ8G32: ~schopper@BFJ8G32:~$ screen -r
+[r[m[2J[H[?7h[?1;4;6l[?1049h[4l[?1h=[0m(B[1;58r[H[2J[H[2Jschopper@BFJ8G32:~$ pwd
+/home/schopper
+schopper@BFJ8G32:~$ exit
+exit
+[H[2Jschopper@BFJ8G32:~$ ls
+[4m[37mApplications[8C[24m[39massignment9.timing  [4m[37mDokumente[4C[24m[1m[36meigene_dateien[19C[0m[4m[37mMusik[19C[24m[39mscreenlog.0[15Cth_signature.txt  [4m[37mVirtualBox VMs[2Cworkspace_stuff
+[24m[39massignment8[9C[4m[37mBilder[14Cdokus_infos[2Cexchange[25CÖffentlich[14C[24m[39mth_signature-ext-en.html  [4m[37mtmp[15CVorlagen[8Cwww
+[24m[39massignment8.timing  [4m[37mbin[17CDownloads[4C[24m[1m[31mFonts.zip[24C[0mpasswords-bisnode2.xml  th_signature-ext.html[5C[4m[37mtrials[12C[24m[1m[36mwin_shares
+[0massignment9[9C[1m[36mdata[16C[0mdump.sql[5C[1m[31minsights-dev-db-20150204.sql.gz[2C[0m[4m[37mSchreibtisch[12C[24m[39mth_signature.html[9C[4m[37mVideos[12Cworkspace
+[24m[39mschopper@BFJ8G32:~$ exit
+exit
+[?1l>[58;1H
+[?1049l[screen is terminating]
+]0;schopper@BFJ8G32: ~schopper@BFJ8G32:~$ exit
+
+Skript beendet: Di 05 Mai 2015 17:10:50 CEST

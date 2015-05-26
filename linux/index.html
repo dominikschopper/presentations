@@ -2415,21 +2415,21 @@ $ find / -name <em>*e*</em></code></pre>
 
 				<ul>
 					<li data-jmpress="zoom" class="will-zoom do-zoom">
-						 let some process run for hours while ...<br />
+						 ... let some process run for hours<br />
 						 and do something else in the same terminal
 					</li>
 					<li data-jmpress="zoom" class="will-zoom do-zoom">
-						let some process run for hours while ...<br />
-						log off and come back tomorrow, to see the result of this process
+						... let some process run for hours while<br />
+						you log off and come back tomorrow, to see the result of this process
 					</li>
 					<li data-jmpress="zoom" class="will-zoom do-zoom">
-						share a terminal with someone else somewhere<br />
-						in ... romania? ... ukraine? ... usa?
+						... share a terminal with someone else somewhere<br />
+						in romania/ukraine/usa?
 					</li>
 				</ul>
 
 				<p data-jmpress="zoom" class="will-zoom do-zoom">
-					then screen might be useful for you!
+                    <strong><em>then screen might be useful for you!</em></strong>
 				</p>
 
 				<footer></footer>
@@ -2439,7 +2439,7 @@ $ find / -name <em>*e*</em></code></pre>
 				<header>screen 2</header>
 
 				<p>
-					screen feels like a <em>window manager</em> <strong>in the shell</strong>
+					screen &quot;feels&quot; like a <em>window manager</em> <strong>in the shell</strong>
 				</p>
 
 				<ul>
@@ -2482,32 +2482,83 @@ $ find / -name <em>*e*</em></code></pre>
 
 				<footer></footer>
 			</div>
+            
+            <div id="tools-screen4" class="step slide" data-x="13400" data-y="-20000" data-z="2500">
+                <header>screen 4 - important shortcuts</header>
+                
+                <p>
+                    <b>Screen - create</b><br />
+                    new screen &quot;window&quot;<br />
+                    <code>C-a C-c</code>
+                </p>
+                
+                <p>
+                    <b>Screen - next</b><br />
+                    jump to next screen &quot;window&quot;<br />
+                    <code>C-a C-n</code>
+                </p>
+                
+                <p>
+                    <b>Screen - previous</b><br />
+                    jump to prev screen &quot;window&quot;<b>Screen - previous</b><br />
+                    <code>C-a C-p</code>
+                </p>
+                
+                <p>
+                    <b>Screen - detach</b><br />
+                    detach from screen, but leave the windows running<br />
+                    <code>C-a C-d</code>
+                </p>
+                
+            </div>
 
-			<div id="tools-screen4" class="step slide" data-x="12400" data-y="-20000" data-z="2000">
-				<header>screen 4</header>
+            <div id="tools-screen5" class="step slide" data-x="14400" data-y="-20000" data-z="3000">
+                <header>screen 5 - screen options</header>
+                
+                <p>
+                    see if&VerticalSeparator;which screen is running<br />
+                    <code> screen -ls </code>
+                </p>
+                
+                <p>
+                    reattach to a running screen session<br />
+                    <code> screen -r </code>
+                </p>
+                
+                <p>
+                    attach to a screen session and share it with somone else<br />
+                    <code> screen -x </code>
+                </p>
 
-				<p>start <em>screen</em> with</p>
-				<pre><cmd>screen</cmd></pre>
+            </div>
+            
+            <div id="assignmentScreen-01" class="step assignment" data-x="-14500" data-y="-2000" data-z="750" data-rotate-y="160">
+                <header class="akzent2"><i class="fa fa-cog fa-spin solve" data-assignment="9"></i> Assignment #9</header>
+                <p class="lead">first steps with screen</p>
+                <ol>
+                    <li>Start a screen session</li>
 
-				<p data-jmpress="zoom" class="will-zoom do-zoom"><br />
-					the first time you start it, you should see a notice that you exit with<br />
-					<kbd>&nbsp;&crarr; </kbd> &nbsp; or <kbd>space</kbd>
-				</p>
+                    <li>execute a <code> ls </code> within the first &quot;window&quot;</li>
 
-				<p data-jmpress="zoom" class="will-zoom do-zoom"><br />
-					afterwards you are in a <strong>new shell</strong> within a screen session, so to speak you are
-					in the <strong>first window</strong>
-				</p>
+                    <li>start a second &quot;window&quot;</li>
 
-				<p data-jmpress="zoom" class="will-zoom do-zoom">
-					to interact with screen in one of your screen sessions you type<br />
-					<kbd> [Ctrl]+[a] </kbd> or the same in the typical Screen notation you find in the man
-					page and on the internet <kbd> C-a </kbd>
-				</p>
+                    <li>execute a <code> pwd </code> within</li>
+                    
+                    <li>switch between the two &quot;windows&quot;</li>
+                    
+                    <li>detach</li>
+                    
+                    <li>see if the screen session is still running</li>
+                    
+                    <li>reattach to the session</li>
+                    
+                    <li>exit all running screen &quot;windows&quot;</li>
 
-				<footer></footer>
-			</div>
-
+                </ol>
+            </div>
+            
+            
+            
             <div id="chapEditors" class="step slide chapter blue" data-y="3000">
                 <header>Editors</header>
                 <footer></footer>
@@ -2578,10 +2629,43 @@ $ find / -name <em>*e*</em></code></pre>
             </div>
             <div id="scriptloops" class="step slide" data-y="4000" data-x="6000">
                 <header><em>For</em> Loop</header>
-                <pre><code class="bash">for SVN_PROJECT in <em title="list directories">*/.svn</em>
-  do
-    <em title="update svn directory">svn up ${SVN_PROJECT/%.svn/}</em>
-done</code></pre>
+
+                <p>
+                    a <em>for loop</em> iterates over a list of words.
+                    e.g. you run the <code>useradd</code> command against a list of names
+                </p>
+
+                <pre><code class="bash">for <em title="continuous variable for each user">user</em> in <em title="a list of names">joe jane jack janet</em>#loop head
+do                              # start the loop
+    useradd -m <em>$user</em>           # loop body -&gt; runs n times
+done                            # end the loop
+</code></pre>
+
+                <p>or you want to do more complex tasks with a list of files</p>
+                
+                <pre><code class="bash">for <em title="continuous variable for each file">file</em> in <em title="a list of files created by the bash">.*rc</em> # list expanded by the shell
+do
+    echo "--> <em>$file</em> <--"
+    head -n2 <em>$file</em>
+done
+</code></pre>
+                <footer></footer>
+            </div>
+
+            <div id="scriptloops2" class="step slide" data-y="4000" data-x="6000">
+                <header><em>While</em> Loop</header>
+                
+                <p>
+                    a <em>while loop</em> runs as long, as the <a href="#/script-test"> test </a> returns <em>false</em>
+                </p>
+                
+                <pre><code class="bash">c=0 # initialize
+while <em title="testing $c greater or equal 12">[ "$c" -le 12 ]</em> # test
+do
+    echo "running round no $c"
+    c=$[$c+1]
+done
+</code></pre>
                 <footer></footer>
             </div>
 
